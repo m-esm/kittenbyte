@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Privacy Policy — KittenByte</title>
+<meta name="description" content="KittenByte processes your photos entirely on your device. No data is collected, transmitted, or shared." />
+<meta name="theme-color" content="#FBF5EE" />
+<link rel="icon" type="image/png" href="../screenshots/app-icon-web.png" />
+<style>
+  :root {
+    --cream:    #FBF5EE;
+    --cream-2:  #FFFBF5;
+    --ink:      #1A1410;
+    --ink-soft: #6B574B;
+    --coral-d:  #B84A1E;
+    --line:     rgba(26, 20, 16, 0.08);
+    --serif:    'Cooper BT', 'Cooper Std', 'Recoleta', 'Playfair Display', Georgia, serif;
+    --sans:     -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: var(--sans); color: var(--ink);
+    background: var(--cream); line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--coral-d); }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  nav {
+    border-bottom: 1px solid var(--line);
+    background: rgba(251, 245, 238, 0.78);
+    backdrop-filter: saturate(140%) blur(16px);
+    -webkit-backdrop-filter: saturate(140%) blur(16px);
+    position: sticky; top: 0; z-index: 5;
+  }
+  .nav-row {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 800; font-size: 18px; text-decoration: none; color: var(--ink);
+  }
+  .brand img { width: 32px; height: 32px; border-radius: 8px; }
+  .nav-back { font-size: 14px; color: var(--ink-soft); text-decoration: none; }
+  .nav-back:hover { color: var(--coral-d); }
+  main { padding: 56px 0 80px; }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(36px, 5vw, 52px);
+    line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0 0 8px;
+  }
+  .updated { color: var(--ink-soft); font-size: 14px; margin: 0 0 36px; }
+  h2 {
+    font-family: var(--serif);
+    font-size: 24px; margin-top: 40px; margin-bottom: 12px;
+    line-height: 1.2; letter-spacing: -0.01em;
+  }
+  p, li { color: var(--ink-soft); font-size: 17px; }
+  ul { padding-left: 22px; }
+  .hero-claim {
+    background: var(--cream-2);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--coral-d);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 24px 0 0;
+  }
+  .hero-claim p { color: var(--ink); margin: 0; font-weight: 500; }
+  footer {
+    margin-top: 80px; padding: 24px 0;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-row">
+    <a class="brand" href="../">
+      <img src="../screenshots/app-icon-web.png" alt="KittenByte" />
+      KittenByte
+    </a>
+    <a class="nav-back" href="../">← Back to home</a>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective April 29, 2026</p>
+
+    <div class="hero-claim">
+      <p>KittenByte processes your photos entirely on your device. No data is collected, transmitted, or shared with third parties.</p>
+    </div>
+
+    <h2>What KittenByte does</h2>
+    <p>KittenByte reads photos and videos from your device's photo library so you can swipe through them and choose which ones to delete. Deletion happens through your operating system's standard delete flow, which always asks you to confirm before any photo leaves your device.</p>
+
+    <h2>What KittenByte does not do</h2>
+    <ul>
+      <li>It does not upload, copy, back up, or otherwise transmit your photos.</li>
+      <li>It does not contain analytics, tracking, advertising, or crash reporting SDKs.</li>
+      <li>It does not require an account, email address, or any other identifier.</li>
+      <li>It does not make network requests of any kind during normal operation.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>KittenByte requests the following permissions:</p>
+    <ul>
+      <li><strong>Photo library access</strong> (iOS and Android): required to display your photos and videos so you can decide what to keep, and to request deletion of items you choose. On iOS this uses Apple's PhotoKit framework; on Android, the system MediaStore. In both cases the operating system controls the access scope and shows a confirmation dialog before deleting.</li>
+    </ul>
+
+    <h2>Data storage</h2>
+    <p>KittenByte stores only ephemeral, on-device state needed to run the app (for example, a queue of items you've marked for deletion in the current session). This state lives only on your device and is cleared when you close the app or confirm a batch delete.</p>
+
+    <h2>Children's privacy</h2>
+    <p>KittenByte does not collect data from anyone, including children under 13. The app is rated for general audiences.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If KittenByte ever changes how it handles data, this page will be updated and the effective date above revised. Material changes will be reflected in the app's release notes.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns: open an issue at <a href="https://github.com/m-esm/kittenbyte/issues" target="_blank" rel="noopener">github.com/m-esm/kittenbyte</a>.</p>
+
+    <footer>© 2026 KittenByte · Built with Kotlin Multiplatform &amp; Compose</footer>
+  </div>
+</main>
+
+</body>
+</html>
